@@ -129,6 +129,7 @@ func (p *HatchetCloudProvider) Resources(ctx context.Context) []func() resource.
 func (p *HatchetCloudProvider) DataSources(ctx context.Context) []func() datasource.DataSource {
 	return []func() datasource.DataSource{
 		NewTenantDataSource,
+		NewOrganizationMembersDataSource,
 	}
 }
 
